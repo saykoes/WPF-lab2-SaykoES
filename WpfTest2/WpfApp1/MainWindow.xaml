@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <StackPanel HorizontalAlignment="Left">
+            <Label Content="Последние файлы"/>
+            <Label Content="1.txt"/>
+            <Label Content="2.txt"/>
+            <Label Content="3.txt"/>
+            <Label Content="4.txt"/>
+            <Label Content="5.txt"/>
+            <Label Content="6.txt"/>
+        </StackPanel>
+
+        <Canvas>
+            <StackPanel Canvas.Left="125" Canvas.Top="25" Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label Content="1.txt" FontWeight="Black"/>
+                <Label Content="2.txt"/>
+                <Label Content="3.txt"/>
+            </StackPanel>
+            
+            <Button Canvas.Left="130" Canvas.Top="5" Width="75" Content="Открыть" />
+            <Button Canvas.Left="220" Canvas.Top="5" Width="85" Content="Сохранить" />
+            <Button Canvas.Left="320" Canvas.Top="5" Width="75" Content="Закрыть" />
+            <Button Canvas.Left="415" Canvas.Top="5" Width="85" Content="Обработать" />
+            <Button Canvas.Left="520" Canvas.Top="5" Width="100" Content="О Программе" />
+        </Canvas>
+
+        <WrapPanel Margin="120,50,0,0" >
+            <Label Margin="5" Background="Yellow" Content="A" Width="50" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Margin="5" Background="Red" Content="B" Width="50" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Margin="5" Background="Green" Content="C" Width="50" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Margin="5" Background="Blue" Content="D" Width="50" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Margin="5" Background="Gray" Content="E" Width="50" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Margin="5" Background="Bisque" Content="E" Width="50" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </WrapPanel>
+    </Grid>
+</Window>
